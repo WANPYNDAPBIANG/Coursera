@@ -1,18 +1,1 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Explore the Seven Sisters</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Explore the Seven Sisters States of Northeast India</h1>
-        <p>with Mr. Nangban Nongrang — Tour Guide & Driver</p>
-        <p class="tagline">The Journey of Faith</p>
-      </div>
-    </section>
-
-  </body>
-</html>
