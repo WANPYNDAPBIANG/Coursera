@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <!-- Hamburger icon for mobile -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle menu on mobile
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Explore the North East with Us</h1>
+      <p>Your journey of faith and adventure starts here</p>
+      <a href="#tours" class="btn">View Tours</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Seven Sisters Travel Agency is dedicated to providing the most authentic and unforgettable experiences across North East India. Our mission is to connect travelers with the natural beauty, culture, and adventure of the region.</p>
+      <div class="about-img">
+        <img src="assets/home-hero.jpg" alt="Beautiful view of North East India">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section id="tours" class="tours">
+    <div class="container">
+      <h2>Our Tours</h2>
+      <div class="tour-cards">
+        <div class="tour-card">
+          <img src="assets/tour1.jpg" alt="Tour 1 - Scenic Hills">
+          <h3>Scenic Hills Tour</h3>
+          <p>Experience breathtaking hills, rivers, and culture in a 3-day guided tour.</p>
+        </div>
+        <div class="tour-card">
+          <img src="assets/tour2.jpg" alt="Tour 2 - Cultural Exploration">
+          <h3>Cultural Exploration</h3>
+          <p>Discover traditional villages, handicrafts, and local cuisine in this immersive tour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Seven Sisters Travel Agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

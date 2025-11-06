@@ -1,0 +1,104 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar style */
+nav {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  background: linear-gradient(to right, #004d40, #00796b);
+  padding: 10px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 8px;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffeb3b;
+  border-bottom: 2px solid #ffeb3b;
+}
+}
+/* HERO SECTION */
+.hero {
+  height: 100vh;  /* full screen height */
+  background-color: black;
+  background-size: cover; /* make it cover full area */
+  background-position: center; /* center the photo */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Optional dark overlay (to make text clearer) */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1); /* transparent black */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2; /* keeps text above overlay */
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem; /* roughly 45px */
+  margin-bottom: 0.8rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem; /* about 19px */
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #ffcc66;
+}
